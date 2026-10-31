@@ -1,0 +1,6 @@
+{
+  "name": "Trustly Pharma | Peptide Research Index & Analytical Directory",
+  "description": "Trustly Pharma is an authoritative UK and international peptide research index and analytical chemical directory providing independent HPLC/LC-MS verification standards and regulatory reference data.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
