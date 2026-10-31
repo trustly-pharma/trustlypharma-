@@ -150,10 +150,13 @@ export const Hero: React.FC<HeroProps> = ({
               {/* Visual Container */}
               <div className="relative aspect-[16/10] overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/hero_peptide_structure_1793428578573.jpg"
+                  src="/images/hero_peptide_structure.jpg"
                   alt="Trustly Pharma 3D molecular peptide helix structure rendering"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/src/assets/images/hero_peptide_structure_1793428578573.jpg';
+                  }}
                 />
                 
                 {/* Visual Scrim for High-Contrast Text Legibility */}

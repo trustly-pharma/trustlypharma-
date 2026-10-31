@@ -95,10 +95,13 @@ export const VendorDirectoryPreview: React.FC = () => {
         <div className="mt-12 bg-slate-900/60 border border-slate-800 rounded-2xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 items-center">
           <div className="lg:col-span-4 aspect-[4/3] lg:aspect-auto h-full overflow-hidden">
             <img
-              src="/src/assets/images/analytical_lab_peptides_1793428581462.jpg"
+              src="/images/analytical_lab_peptides.jpg"
               alt="Accredited laboratory peptide analysis vials and Certificates of Analysis"
               className="w-full h-full object-cover"
               referrerPolicy="no-referrer"
+              onError={(e) => {
+                (e.target as HTMLImageElement).src = '/src/assets/images/analytical_lab_peptides_1793428581462.jpg';
+              }}
             />
           </div>
           <div className="lg:col-span-8 p-6 lg:p-8 space-y-3">

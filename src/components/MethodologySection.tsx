@@ -103,10 +103,13 @@ export const MethodologySection: React.FC = () => {
               
               <div className="relative aspect-[4/3] w-full overflow-hidden bg-slate-950">
                 <img
-                  src="/src/assets/images/methodology_hplc_chromatogram_1793428580088.jpg"
+                  src="/images/methodology_hplc_chromatogram.jpg"
                   alt="High performance liquid chromatography HPLC mass spectrometry analytical instrumentation"
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    (e.target as HTMLImageElement).src = '/src/assets/images/methodology_hplc_chromatogram_1793428580088.jpg';
+                  }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent pointer-events-none" />
                 <div className="absolute top-3 left-3 bg-[#090f21]/90 backdrop-blur-md border border-slate-700/80 rounded px-2 py-1 text-[10px] font-mono text-teal-300">
